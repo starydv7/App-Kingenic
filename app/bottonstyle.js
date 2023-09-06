@@ -1,7 +1,7 @@
 const styles = {
   bottomNavigationBar: {
     flexDirection: 'row',
-    // justifyContent: 'space-around',
+    justifyContent: 'space-around',
     // alignItems: 'center',
     backgroundColor: 'white',
     paddingVertical: 10,

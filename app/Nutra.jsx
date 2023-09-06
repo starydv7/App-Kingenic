@@ -81,7 +81,7 @@ const SportBrand = () => {
                 style={styles.searchIcon}
               />
             </TouchableOpacity>
-            <Text style={styles.portfolioText}> Dairy Protein </Text>
+            <Text style={styles.portfolioText}> Nutra </Text>
           </View>
           <Text style={styles.text}>
             Slide through the sub-categories to find the right fit product for

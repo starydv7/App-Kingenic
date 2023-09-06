@@ -14,7 +14,9 @@ const RegisterScreen = () => {
     };
 
     return (
-        <ScrollView contentContainerStyle={styles.container}>
+        <View style={styles.topmost}>
+        <ScrollView contentContainerStyle={styles.container}  showsVerticalScrollIndicator={false}
+        overScrollMode="never">
             <View style={styles.header}>
                 <View style={styles.logosign}>
                     <Image source={require('../assets/images/Add-User.png')} style={styles.logoImage} />
@@ -61,7 +63,7 @@ const RegisterScreen = () => {
 
             <Text style={styles.requestAccess}>By signing up, you agree to our Terms and Conditions.</Text>
             
-            <BottomNavigationBar />
+            
             
             <Modal
                 animationType="slide"
@@ -79,27 +81,48 @@ const RegisterScreen = () => {
                 </View>
             </Modal>
         </ScrollView>
+        <BottomNavigationBar />
+        </View>
     );
 };
 
 const styles = StyleSheet.create({
+    topmost:{
+    //   borderWidth:2,
+    //   borderColor:'red',
+      flex:1,
+      justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor:'teal'
+    },
     container: {
         flexGrow: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#ffffff',
+        // backgroundColor: '#ffffff',
         padding: 20,
+        // borderWidth:2,
+        // borderColor:'green',
+        marginTop:45
     },
     header: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        // justifyContent: 'space-between',
         marginBottom: 20,
+        marginTop:-10,
+    //     borderWidth:2,
+    //   borderColor:'red',
+      width:200,
+      height:70,
+      marginLeft:-100,
     },
     subtitle: {
         fontSize: 28,
-        left: "-150%",
-        top: "-10%",
+        // left: "-150%",
+        // top: "-10%",
+    //     borderWidth:2,
+    //   borderColor:'red',
     },
     form: {
         width: '100%',
@@ -113,6 +136,7 @@ const styles = StyleSheet.create({
     },
     inputGroup: {
         marginBottom: 10,
+        
     },
     label: {
         color: 'black',
@@ -123,6 +147,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         padding: 10,
+        backgroundColor:'white',
+        
     },
     checkboxContainer: {
         flexDirection: 'row',
@@ -149,21 +175,24 @@ const styles = StyleSheet.create({
         fontSize: 12,
     },
     logosign: {
-        width: 50,
-        height: 50,
-        borderRadius: 20,
+        width: 80,
+        height: 80,
+        borderRadius: 80/2,
         overflow: 'hidden',
-        top: "-10%",
-        left: "-210%",
-        borderWidth: 2,
+        // top: "-10%",
+        // left: "-210%",
+        borderWidth: 1,
         borderColor: "black",
+        marginRight:10,
+        justifyContent:'center',
+        alignItems:'center'
     },
     logoImage: {
         width: '50%',
         height: '50%',
         resizeMode: 'cover',
-        top: 10,
-        left: 13,
+        // top: 10,
+        // left: 13,
     },
     modalContainer: {
         flex: 1,
