@@ -319,27 +319,67 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'contain', // Change resizeMode to 'contain'
+    justifyContent: 'center',
+    // borderWidth: 2,
+    // borderColor: 'red',
+    // width:"70%"
+    height:"100%",
+  
+  },
   topmost: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    
-  },
-  brandedPortfolio: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    // borderWidth:2,
-    // borderColor:"red",
-    marginTop:45,
-    width:'100%'
    
   },
-  backButton: {
-    padding: 10,
+  nav:{
+    //   borderWidth:2,
+    // borderColor:'red',
+    width:"90%",
+    height:40,
+    justifyContent:'space-between',
+    alignItems:'center',
+    marginTop:60,
+    flexDirection:'row',
+    borderBottomWidth:1,
+    borderColor:'black'
+  },
+  navtext:{
+    //  borderWidth:2,
+    // borderColor:'red',
+    fontSize:16,
+    marginRight:70,
+    fontWeight:700,
+    color:'black'
+  
+  },
+  boxslider:{
     // borderWidth:2,
     // borderColor:"red",
-    marginRight:40
+    height:155,
+    width:350,
+    borderRadius:10,
+    // backgroundColor:'yellow'
+    marginTop:15
   },
+  image: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover',
+    borderRadius:10
+  },
+  slide: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal:10
+  },
+  
+ 
+  
   backbutton: {
     width: 30,
     height: 30,
@@ -348,118 +388,106 @@ const styles = StyleSheet.create({
     // borderWidth:2,
     // borderColor:"red",
   },
-  // backIcon: {
-  //   width: 20,
-  //   height: 20,
-  //   // Add any additional styles for the icon image
-  //   // borderWidth:2,
-  //   // borderColor:"red",
-  // },
-  brandText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginLeft: 10,
-    // Add any additional styles for the brand text
-    // borderWidth:2,
-    // borderColor:"red",
-  },
-  hello1: {
-    marginTop: 20,
-    fontSize: 16,
-    // borderWidth:2,
-    // borderColor:"red",
-    // marginTop: 50,
-     marginBottom:5,    
-      width: '100%',
-    height: 40,
-    
-    lineHeight: 30,
-   
-     textAlign: 'center'
-  },
+ 
+ 
+ 
   cardContainer: {
-    marginTop: 10,
+    width:'100%',
     // borderWidth:2,
     // borderColor:"blue",
-    padding: 10,
+    padding: 20,
     // Add any additional styles for the card container
   },
   card: {
     // padding: 10,
-    backgroundColor: 'white',
+   flexDirection:'row',
+    // backgroundColor: 'white',
     borderRadius: 10,
     marginBottom: 20,
-    // borderWidth:2,
-    // borderColor:"green",
-    elevation: 5, // Add elevation for box shadow
-    shadowColor: '#000', // Shadow color
-    shadowOffset: { width: 0, height: 2 }, // Shadow offset
-    shadowOpacity: 0.2, // Shadow opacity
-    shadowRadius: 4, 
+   borderBottomWidth:1,
+    borderColor:"#E3E5E5",
+    // elevation: 5, // Add elevation for box shadow
+    // shadowColor: '#000', // Shadow color
+    // shadowOffset: { width: 0, height: 2 }, // Shadow offset
+    // shadowOpacity: 0.2, // Shadow opacity
+    // shadowRadius: 4, 
     // Add any additional styles for the card
+    width:304,
+    height:130,
+    justifyContent:"space-between",
+    alignItems:'flex-start'
   },
-  box1: {
-    flexDirection: 'row',
-    // borderWidth:2,
-    // borderColor:"green",
-    // Add any additional styles for the box1 container
-  },
-  box2: {
-    width: 55,
-    height: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-    // backgroundColor: '#e0e0e0',
-    // borderRadius: 30,
-    marginRight: 15,
-    marginLeft:10,
-    // borderWidth:2,
-    // borderColor:"red",
-    // Add any additional styles for the box2 container
-  },
-  logo: {
-    width: '100%',
-    height: 30,
-    // Add any additional styles for the logo image
-  },
-  box3: {
-    flex: 1,
-    // borderWidth:2,
-    // borderColor:"red",
-    marginTop:5
-    // Add any additional styles for the box3 container
-  },
-  cat1: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    // borderWidth:2,
-    // borderColor:"red",
-    // Add any additional styles for the cat1 text
-  },
-  catbrand: {
-    fontSize: 14,
-    // borderWidth:2,
-    // borderColor:"red",
-    // Add any additional styles for the catbrand text
-  },
+  // box1: {
+  //   flexDirection: 'row',
+  //   // borderWidth:2,
+  //   // borderColor:"green",
+  //   // Add any additional styles for the box1 container
+  // },
+  // box2: {
+  //   width: 55,
+  //   height: 50,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  //   // backgroundColor: '#e0e0e0',
+  //   // borderRadius: 30,
+  //   marginRight: 15,
+  //   marginLeft:10,
+  //   borderWidth:2,
+  //   borderColor:"red",
+  //   // Add any additional styles for the box2 container
+  // },
+  // logo: {
+  //   width: '100%',
+  //   height: 30,
+  //   // Add any additional styles for the logo image
+  // },
+  // box3: {
+  //   flex: 1,
+  //   // borderWidth:2,
+  //   // borderColor:"red",
+  //   marginTop:5
+  //   // Add any additional styles for the box3 container
+  // },
+  
+ cat1:{
+  fontSize:11,
+  fontWeight:600
+ },
   cardImage: {
-    width: '100%',
-    height: 200,
-    marginTop: 10,
+    width: 111,
+    height: 113,
+    // marginTop: 10,
     // borderWidth:2,
     // borderColor:"red",
     // Add any additional styles for the card image
   },
-  catText: {
-    fontSize: 13,
+  textbox:{
     // borderWidth:2,
     // borderColor:"red",
+    flexDirection:'column',
+    justifyContent:'space-evenly',
+    gap:5
+  },
+  catText: {
+    fontSize: 9,
+    // borderWidth:2,
+    // borderColor:"red",
+    fontWeight:400,
     // marginTop:10,
-    padding: 15,
-    color:'#76b5c5'
-   
-    
+    // padding: 15,
+    color:'black',
+   width:184,
+    height:82
     // Add any additional styles for the catText text
+  },
+  shadowContainer: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    height: 100, // Adjust this value as needed
+    // backgroundColor: "rgba(238, 223, 210,0.3)", // Adjust the color and opacity as needed
+    zIndex: -1,
   },
 });
 
