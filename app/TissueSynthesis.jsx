@@ -7,6 +7,7 @@ import {
   Image,
   TouchableOpacity,
   ImageBackground,
+  Dimensions
 } from "react-native";
 import BottomNavigationBar from "./BottomNavigationBar";
 import { useNavigation } from "expo-router";
@@ -164,7 +165,8 @@ const Surgery = () => {
     </ImageBackground>
   );
 };
-
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
@@ -199,10 +201,14 @@ const styles = StyleSheet.create({
   navtext: {
     //  borderWidth:2,
     // borderColor:'red',
-    fontSize: 16,
-    marginRight: 60,
-    fontWeight: 700,
-    color: "black",
+    // fontSize: 16,
+    // marginRight: 60,
+    // fontWeight: 700,
+    // color: "black",
+    fontSize: windowWidth * 0.04, // Adjust the font size as a percentage of the screen width
+    marginRight: windowWidth * 0.20, // Adjust the margin as a percentage of the screen width
+    fontWeight: '700', // Use string '700' for fontWeight
+    color: 'black',
   },
   container: {
     flexGrow: 1,

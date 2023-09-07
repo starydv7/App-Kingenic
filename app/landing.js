@@ -1,280 +1,10 @@
 
- import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
-// const styles = StyleSheet.create({
-  
-//   topmost: {
-//     flex: 1,
-//     // backgroundColor: 'teal',
-//     paddingHorizontal: 10,
-//     paddingTop: 40,
-//     borderWidth: 2,
-//       borderColor: 'red',
-//       justifyContent: "center",
-//            alignItems: "center",
-//   },
-//   carasol:{
-//     height:300,
-//     width:'80%',
-//     borderWidth: 2,
-//       borderColor: 'red',
-//   },
-//   carouselItem: {
-//     borderRadius: 5,
-//     backgroundColor: 'lightgray',
-//     overflow: 'hidden',
-//     borderWidth:2,
-//     borderColor:'green',
-//     marginTop:10,
-//     width: '80%',
-//   },
-//   carouselImage: {
-//     width: '100%',
-//     height: '100%',
-//   },
-//   paginationContainer:{
-//     // borderWidth:2,
-//     // borderColor:'green',
-//     // width:100,
-    
-//   },
-//   paginationDot:{
-//     // borderWidth:2,
-//     // borderColor:'red',
-//     width: 10,
-//     height: 10,
-//     borderRadius: 5,
-//     backgroundColor: 'rgba(0, 0, 0, 0.92)',
-//   },
-//   top:{
-//     width:'100%',
-//     height:50,
-//     // borderWidth: 2,
-//     borderBottomWidth:1,
-//     justifyContent: 'space-between',
-//            alignItems: "center",
-//         flexDirection:'row' ,  
-//     // /
-//     padding:10
-//   },
- 
-//   cardImage1:{
-//     width:200,
-//     height:52,
-//     //  borderWidth: 2,
-//     //  borderColor: 'red',
-//      marginRight:65
-//  },
-//  backButton :{
-//   width:24,
-//   height:24,
-//   opacity:0.8
-  
-//  },
-//   cardContainer: {
-//     // marginTop: 5,
-//     borderWidth: 4,
-//     borderColor: 'green',
-//     // width:'100%'
-//     // padding:15,
-//     justifyContent:'center',
-//     // alignItems:'center'
-   
-//   },
-//   card: {
-//     backgroundColor: 'white',
-//     borderRadius: 10,
-//     padding: 10,
-//     flexDirection: 'row',
-//     alignItems: 'center',
-//     marginBottom: 15,
-//     borderWidth: 2,
-//     borderColor: 'red',
-//     flexDirection: "column",
-//     shadowColor: "black",
-//     shadowOffset: { width: 0, height: 2 },
-//     shadowOpacity: 0.3,
-//     shadowRadius: 4,
-//     elevation: 5,
-    
-//   },
-  
-//   cardImage: {
-//     width: '100%',
-//     height: 200,
-//     // marginRight: 15,
-//     // borderWidth: 2,
-//     // borderColor: 'red',
-//   },
-//   box1: {
-//     flex: 1,
-//     // borderWidth: 2,
-//     // borderColor: 'red',
-//     width:'100%',
-//     padding:10
-//   },
-//   cat1: {
-//     fontFamily: 'Inter-Medium',
-//     fontSize: 18,
-//     color: '#333',
-//     // borderWidth: 2,
-//     // borderColor: 'red',
-//   },
-//   catText: {
-//     fontFamily: 'Inter-Regular',
-//     fontSize: 14,
-//     color: '#666',
-//     marginTop: 5,
-//     // borderWidth: 2,
-//     // borderColor: 'red',
-//   },
-//   shadowContainer: {
-//     position: "absolute",
-//     top: 0,
-//     left: 0,
-//     right: 0,
-//     height: 100, // Adjust this value as needed
-//     backgroundColor: "rgba(238, 223, 210,0.3)", // Adjust the color and opacity as needed
-//     zIndex: -1,
-//   },
-// });
 
-// export default styles;
-// const styles = StyleSheet.create({
-//   topmost: {
-//     flex: 1,
-//     backgroundColor: "#ffffff",
-//     borderWidth:2,
-//     borderColor:'red',
-//     justifyContent:'center',
-//     alignItems:'center'
-//   },
-//   top: {
-//     flexDirection: "row",
-//     justifyContent: "space-between",
-//     alignItems: "center",
-//     paddingHorizontal: 5,
-//     // paddingTop: 50,
-//     backgroundColor: "#fff",
-//     // borderWidth:2,
-//     // borderColor:'red',
-//     marginTop:60,
-//     borderBottomWidth:1,
-//     width:'90%'
-//   },
-//   backButton: {
-//     width: 40,
-//     height: 40,
-//     justifyContent: "center",
-//     alignItems: "center",
-//     // borderWidth:2,
-//     // borderColor:'red'
-//   },
-//   // backbutton: {
-//   //   // backgroundColor: "#F1F3F6",
-//   //   borderRadius: 50,
-//   //   width: 20,
-//   //   height: 20,
-//   //   justifyContent: "center",
-//   //   alignItems: "center",
-//   // },
-//   backIcon: {
-//     width: 10,
-//     height: 20,
-//     tintColor: "#000",
-//   },
-//   cardImage1: {
-//     width: 180,
-//     height: 52,
-//     // borderWidth:2,
-//     // borderColor:'red',
-//     marginRight:80,
-//   },
-//   cardContainer: {
-//     backgroundColor: "#ffffff",
-//     paddingBottom: 20,
-//       borderWidth:2,
-//      borderColor:'blue',
-//      marginTop:40,
-//     //  flex:1,
-//     //  justifyContent:'center',
-//     //  alignItems:'center',
-//      width:'80%',
-//      padding:20
-//   },
-//   carasol: {
-//     paddingHorizontal: 20,
-//     paddingTop: 10,
-//      borderWidth:2,
-//     borderColor:'red',
-//     width:'80%'
-//   },
-//   carouselItem: {
-//     backgroundColor: "#ffffff",
-//     borderRadius: 10,
-//     overflow: "hidden",
-//     shadowColor: "black",
-//     shadowOffset: { width: 0, height: 2 },
-//     shadowOpacity: 0.1,
-//     shadowRadius: 3,
-//     elevation: 5,
-//     width: "80%",
-//   },
-//   carouselImage: {
-//     width: "80%",
-//     height: 200,
-//   },
-//   paginationContainer: {
-//     paddingTop: 10,
-//     paddingBottom: 10,
-//     alignItems: "center",
-//   },
-//   paginationDot: {
-//     width: 10,
-//     height: 10,
-//     borderRadius: 5,
-//     marginHorizontal: 8,
-//     backgroundColor: "#000",
-//   },
-//   paginationInactiveDot: {
-//     backgroundColor: "#ccc",
-//   },
-//   card: {
-//     backgroundColor: "#fff",
-//     borderRadius: 10,
-//     overflow: "hidden",
-//     shadowColor: "#000",
-//     shadowOffset: {
-//       width: 0,
-//       height: 2,
-//     },
-//     shadowOpacity: 0.23,
-//     shadowRadius: 2.62,
-//     elevation: 4,
-//     marginBottom: 20,
-//   },
-//   cardImage: {
-//     width: "100%",
-//     height: 150,
-//   },
-//   box1: {
-//     padding: 15,
-//   },
-//   cat1: {
-//     fontFamily: "Inter-Bold",
-//     fontSize: 16,
-//     color: "#333",
-//     marginBottom: 5,
-//   },
-//   catText: {
-//     fontFamily: "Inter-Regular",
-//     fontSize: 14,
-//     color: "#666",
-//   },
-// });
 
-// export default styles;
-
+ const windowWidth = Dimensions.get('window').width;
+ const windowHeight = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
   backgroundImage: {
@@ -295,44 +25,68 @@ const styles = StyleSheet.create({
     //  borderWidth: 2,
     // borderColor: 'red',
   },
-  nav:{
-    //   borderWidth:2,
-    // borderColor:'red',
-    width:"95%",
-    height:40,
-    justifyContent:'space-between',
-    alignItems:'center',
-    marginTop:60,
-    flexDirection:'row',
-    borderBottomWidth:1,
-    borderColor:'black',
-    marginLeft:10
+  // nav:{
+  //   //   borderWidth:2,
+  //   // borderColor:'red',
+  //   width:"95%",
+  //   height:40,
+  //   justifyContent:'space-between',
+  //   alignItems:'center',
+  //   marginTop:60,
+  //   flexDirection:'row',
+  //   borderBottomWidth:1,
+  //   borderColor:'black',
+  //   marginLeft:10
+  // },
+  nav: {
+    width: '95%',
+    height: windowHeight * 0.06,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: windowHeight * 0.05,
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    marginLeft: windowWidth * 0.05,
   },
   
   
   navlogo:{
-    height:52,
-    width:150,
-    // borderWidth:2,
-    // borderColor:'red',
-    marginRight:90
+    // height:52,
+    // width:150,
+    // // borderWidth:2,
+    // // borderColor:'red',
+    // marginRight:90
+    // height: windowHeight * 0.08,
+    // width: windowWidth * 0.35,
+    // marginRight: windowWidth * 0.3,
+    flex: 1, // Add flex property to center content
+  justifyContent: 'center', // Center vertically
+  alignItems: 'center', // Center horizontally
+  height: windowHeight * 0.08,
+  width: windowWidth * 0.35,
+  marginRight: windowWidth * 0.1,
   },
   navimage:{
     // borderWidth:2,
     // borderColor:'red',
-    height:52,
-    width:150,
+    // height:52,
+    // width:150,
+    height: windowHeight * 0.07,
+    width: windowWidth * 0.35,
   },
   boxslider:{
     // borderWidth:2,
     // borderColor:"red",
-    height:375,
-    width:350,
+    height: windowHeight * 0.5,
+    width: windowWidth * 0.9,
+    // height:375,
+    // width:350,
     borderRadius:10,
     // backgroundColor:'yellow'
     // marginTop:15,
     // marginBottom:20,
     padding:10
+    
   },
   image: {
     width: '100%',
@@ -347,78 +101,114 @@ const styles = StyleSheet.create({
     paddingHorizontal:2
   },
   top: {
+    // flexDirection: 'row',
+    // alignItems: 'center',
+    // justifyContent:'space-between',
+    // // paddingHorizontal: 20,
+    // marginTop:60,
+    // // borderWidth:2,
+    // borderColor:'black',
+    // width:'90%',
+    // height:40,
+    // // marginBottom:30,
+    // borderBottomWidth:1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent:'space-between',
-    // paddingHorizontal: 20,
-    marginTop:60,
-    // borderWidth:2,
-    borderColor:'black',
-    width:'90%',
-    height:40,
-    // marginBottom:30,
-    borderBottomWidth:1,
+    justifyContent: 'space-between',
+    paddingHorizontal: windowWidth * 0.03, // Adjust padding based on window width
+    marginTop: windowHeight * 0.05,
+    borderColor: 'black',
+    width: '90%',
+    height: windowHeight * 0.04, // Adjust height based on window height
+    borderBottomWidth: 1,
+    alignSelf: 'center', // Center horizontally within its container
     
   },
   
   backIcon: {
-    width: 20,
-    height: 20,
+    // width: 20,
+    // height: 20,
+    // resizeMode: "contain",
+    width: windowWidth * 0.03, // Adjust width based on window width
+    height: windowWidth * 0.03, // Adjust height based on window width (for a square icon)
     resizeMode: "contain",
   },
   cardImage1: {
-    width: 200,
-    height: 52,
-    // marginLeft:20,
-    // borderWidth:2,
-    // borderColor:'blue',\
-    marginRight:58
+    // width: 200,
+    // height: 52,
+    // // marginLeft:20,
+    // // borderWidth:2,
+    // // borderColor:'blue',\
+    // marginRight:58
+    width: windowWidth * 0.35, // Adjust width based on window width
+    height: windowHeight * 0.08, // Adjust height based on window height
+    marginRight: windowWidth * 0.1, // Adjust margin right based on window width
   },
   Container: {
-    padding: 20,
-    // borderWidth:2,
-    // borderColor:'red',
-    // flex:1,
-    alignItems:'center'
-    
+    // padding: 20,
+    // // borderWidth:2,
+    // // borderColor:'red',
+    // // flex:1,
+    // alignItems:'center'
+    padding: windowWidth * 0.05, // Adjust padding based on window width
+    alignItems: 'center',
   },
 
   Cbox:{
-    borderWidth:2,
-    borderColor:'green',
-    width:'95%',
-    height:200,
-    marginBottom:10,
-    
-  },
-  cardbox: {
-    marginBottom: 20,
     // borderWidth:2,
     // borderColor:'green',
-    padding:10,
-    width:'100%'
+    // width:'95%',
+    // height:200,
+    // marginBottom:10,
+    borderWidth: 2,
+    borderColor: 'green',
+    width: '95%', // Adjust width based on the container's width
+    height: windowHeight * 0.2, // Adjust height based on window height
+    marginBottom: windowHeight * 0.02, // Adjust margin based on window height
   },
-  
+  cardbox: {
+    // marginBottom: 20,
+    // marginBottom: windowHeight * 0.02,
+    // // borderWidth:2,
+    // // borderColor:'green',
+    // padding:10,
+    // width:'100%'
+    marginBottom: windowHeight * 0.02, // Adjust margin based on window height
+  padding: windowWidth * 0.03, // Adjust padding based on window width
+  width: '100%', // Make it take up 100% of the container's width
+  },
   card: {
-    flex:1,
+    flex: 1,
     flexDirection: 'column',
-    
-    marginBottom: 15,
+    marginBottom: windowHeight * 0.015, // Adjust margin based on window height
+    width: windowWidth * 0.85, // Adjust width based on window width
+    height: windowHeight * 0.3, // Adjust height based on window height
     backgroundColor: 'white',
-    
-    overflow: "hidden",
-   
+    overflow: 'hidden',
     borderRadius: 10,
-   
-    width:300,
-    height:200,
-    
-    
   },
+  // card: {
+  //   flex:1,
+  //   flexDirection: 'column',
+  //   marginBottom: windowHeight * 0.015,
+  //   width: windowWidth * 0.85,
+  //   height: windowHeight * 0.3,
+  //   // marginBottom: 15,
+  //   backgroundColor: 'white',
+    
+  //   overflow: "hidden",
+   
+  //   borderRadius: 10,
+   
+  //   // width:300,
+  //   // height:200,
+    
+    
+  // },
   cardImage: {
     width:"100%",
     height: '65%',
-    marginRight: 15,
+    marginRight: windowWidth * 0.02,
     resizeMode: 'contain',
     // borderWidth:2,
     // borderColor:'green',
@@ -430,26 +220,41 @@ const styles = StyleSheet.create({
     flex: 1,
     // borderWidth:4,
     // borderColor:'green',
+    marginTop: windowHeight * 0.01,
     width:'100%',
-    marginTop:10,
+    // marginTop:10,
     backgroundColor:'transparent'
   },
   cat1: {
-    fontSize: 13,
+    //  fontSize: 15,
+    //  fontSize: windowWidth * 0.3, 
+    // fontWeight: 'bold',
+    // marginBottom: 5,
+    // fontSize: windowWidth * 0.03,
+    // marginBottom: windowHeight * 0.005,
+    // marginTop: windowHeight * 0.005,
+    // // borderWidth:2,
+    // // borderColor:'red',
+    // marginLeft:20,
+    // marginTop:5
+    fontSize: windowWidth * 0.05, // Adjust font size based on window width
     fontWeight: 'bold',
-    marginBottom: 5,
-    // borderWidth:2,
-    // borderColor:'red',
-    marginLeft:20,
-    marginTop:5
+    marginBottom: windowHeight * 0.005, // Adjust margin bottom based on window height
+    marginTop: windowHeight * 0.005, // Adjust margin top based on window height
+    marginLeft: windowWidth * 0.05, // Adjust margin left based on window width
   },
   catText: {
-    fontSize: 10,
-    color: '#333',
-    // borderWidth:2,
-    // borderColor:'red',
+    //  fontSize: 10,
+    // color: '#333',
+    // fontSize: windowWidth * 0.02,
+    // // borderWidth:2,
+    // // borderColor:'red',
 
-    marginLeft:20
+    // marginLeft:20
+    fontSize: windowWidth * 0.025, // Adjust font size based on window width
+    color: '#333',
+    marginLeft: windowWidth * 0.05, // Adjust margin left based on window width
+    opacity: 0.7,
   },
 });
 

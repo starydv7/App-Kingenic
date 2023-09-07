@@ -6,6 +6,7 @@ import {
   Image,
   ScrollView,
   TouchableHighlight,
+  Dimensions
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native-gesture-handler";
@@ -171,6 +172,8 @@ const SportBrand = () => {
      
   );
 };
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -199,11 +202,15 @@ const styles = StyleSheet.create({
     marginLeft: -55,
   },
   portfolioText: {
-    fontSize: 20, 
-    fontWeight: "bold", 
+    // fontSize: 20, 
+    // fontWeight: "bold", 
     // marginLeft: 5, 
     // borderWidth:2,
     // borderColor:"blue",
+    fontSize: windowWidth * 0.04, // Adjust the font size as a percentage of the screen width
+    marginRight: windowWidth * 0.25, // Adjust the margin as a percentage of the screen width
+    fontWeight: '700', // Use string '700' for fontWeight
+    color: 'black',
     
   },
   text: {

@@ -37,8 +37,8 @@ const Home = () => {
 
     </View>
         <View style={styles.bottomTextRow}>
-          <Text style={styles.bottomLeftText}>Kingenic Privacy Notice</Text>
-          <Text style={styles.bottomRightText}>Corporate website</Text>
+          <Text style={styles.bottomLeftText}>Kingenic Privacy Notice </Text>
+          <Text style={styles.bottomRightText}>Corporate website </Text>
         </View>
    </ImageBackground>
   );

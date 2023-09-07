@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+// import { StyleSheet } from "react-native";
 
 // const styles = StyleSheet.create({
 //   container: {
@@ -142,7 +142,10 @@ import { StyleSheet } from "react-native";
 // });
 // styles.js
 
+import { StyleSheet, Dimensions } from "react-native";
 
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
 
 const styles = StyleSheet.create({
   backgroundImage: {
@@ -152,38 +155,57 @@ const styles = StyleSheet.create({
     // borderWidth: 2,
     // borderColor: 'red',
     // width:"70%"
-    height:"60%"
+    // height:"60%"
+    height: windowHeight * 0.6,
   },
   container: {
+    // flex: 1,
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    // paddingHorizontal: 20, 
+    // borderWidth:2,
+    // borderColor:'red'
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 20, 
-    // borderWidth:2,
-    // borderColor:'red'
+    paddingHorizontal: windowWidth * 0.05, // Set padding as a percentage of the screen width
   },
   logo: {
-    marginBottom: 20, 
-    // borderWidth:2,
-    // borderColor:'red',
-    width:'100%',
-    alignContent:'center',
-    alignItems:'center',
-    marginTop:80
+    // marginBottom: 20, 
+    // // borderWidth:2,
+    // // borderColor:'red',
+    // width:'100%',
+    // alignContent:'center',
+    // alignItems:'center',
+    // marginTop:80
+   
+   // Adjust top margin as a percentage of the screen height
+   marginBottom: windowHeight * 0.02, // Adjust margin as a percentage of the screen height
+   width: '80%', // Set width as a percentage of the parent container
+   alignSelf: 'center', // Align the logo to the center horizontally
+   marginTop: windowHeight * 0.01, // Adjust top margin as a percentage of the screen height
   },
   logoImage: {
-    width: 350, // Set width as needed
-    height: 200, // Set height as needed
+    // width: 350, // Set width as needed
+    // height: 200, // Set height as needed
+    // resizeMode: 'contain', // Adjust the resizeMode as needed
+    // // Add logo image styles here
+    width: windowWidth * 0.8, // Set width as a percentage of the screen width
+    height: windowHeight * 0.35, // Set height as a percentage of the screen height
     resizeMode: 'contain', // Adjust the resizeMode as needed
-    // Add logo image styles here
+    alignSelf: 'center', // Align the logo image to the center horizontally
   },
   welcome: {
-    fontSize: 30, // Adjust the font size as needed
+    // fontSize: 30, // Adjust the font size as needed
+    // fontWeight: 'bold', // Add font weight as needed
+    // marginBottom: 10, // Add margin or padding as needed
+    // // borderWidth:2,
+    // // borderColor:'red',
+    // marginTop:40
+    fontSize: windowHeight * 0.035, // Adjust the font size as a percentage of the screen height
     fontWeight: 'bold', // Add font weight as needed
-    marginBottom: 10, // Add margin or padding as needed
-    // borderWidth:2,
-    // borderColor:'red',
-    marginTop:40
+    marginBottom: windowHeight * 0.01, // Adjust margin as a percentage of the screen height
+    marginTop: windowHeight * 0.04, // Adjust top margin as a percentage of the screen height
   },
   welcome1: {
     fontSize: 16, // Adjust the font size as needed
@@ -196,31 +218,36 @@ const styles = StyleSheet.create({
   },
   button: {
     // background: #EAFF00;
-    backgroundColor:'#EAFF00',
+    // backgroundColor:'#EAFF00',
+    // paddingVertical: 10, 
+    // paddingHorizontal: 20, 
+    // borderRadius: 8, 
+    // width:'85%',
+    backgroundColor: '#EAFF00',
     paddingVertical: 10, 
-    paddingHorizontal: 20, 
+    paddingHorizontal: windowWidth * 0.1, // Set padding as a percentage of the screen width
     borderRadius: 8, 
-    width:'85%',
-    
-
+    width: windowWidth * 0.85, // Set width as a percentage of the screen width
   },
   buttonText: {
+    // color: 'black', // Customize the button text color
+    // fontSize: 16, // Adjust the font size as needed
+    // fontWeight: '400', // Add font weight as needed
+    // textAlign: 'center', // Align text as needed
     color: 'black', // Customize the button text color
-    fontSize: 16, // Adjust the font size as needed
+    fontSize: windowWidth * 0.04, // Adjust the font size as a percentage of the screen width
     fontWeight: '400', // Add font weight as needed
     textAlign: 'center', // Align text as needed
-    
   },
   bottomTextRow: {
-    flexDirection: 'row',
+     flexDirection: 'row',
     justifyContent: 'space-between',
     // Add margin or padding as needed
     // borderWidth:2,
     // borderColor:'red',
     // marginTop:20,
     width:'100%',
-    padding:12
-    
+    padding:"2%",
   },
   bottomLeftText: {
     color: 'gray', // Customize the left text color
